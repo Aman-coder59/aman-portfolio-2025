@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aman Pathak | Portfolio</title>
+  <style>
+    :root {
+      --light-body-bg: linear-gradient(to right, #e0f7fa, #e8f5e9);
+      --dark-body-bg: linear-gradient(to right, #1f1c2c, #3a3a55);
+      --light-text: #0d1b2a;
+      --dark-text: #ffffff;
+      --section-light: linear-gradient(to right, #ffffffcc, #e3f2fdcc);
+      --section-dark: linear-gradient(to right, #2c2c3cdd, #42425acc);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: var(--light-body-bg);
+      color: var(--light-text);
+      padding: 20px;
+      transition: all 0.5s ease;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+     background: linear-gradient(135deg, #ff0b0b, #1e88e5);
+      color: white;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    header .top-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+    }
+
+    header h1 {
+      font-size: 42px;
+      animation: slideIn 1s ease-out;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #cfd8dc;
+    }
+
+    .about {
+      margin-top: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 16px;
+      color: #e0f7fa;
+    }
+
+    h2 {
+      margin-top: 30px;
+      padding-bottom: 5px;
+      color: inherit;
+    }
+
+    .section {
+      margin: 20px 0;
+      padding: 20px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+      transform: scale(1.01) translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 10px;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #26a69a;
+    }
+
+    a {
+      color: #1565c0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #0d47a1;
+      text-decoration: underline;
+    }
+
+    .icon-text {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 8px 0;
+    }
+
+    .icon-text img {
+      width: 20px;
+      height: 20px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      background-color: #003366;
+      color: white;
+      padding: 15px 0;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 25px auto;
+      padding: 12px 28px;
+      background: linear-gradient(135deg, aqua, #e51e7e);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #1ee51e, #0d47a1);
+      box-shadow: 0 6px 20px rgba(169, 86, 155, 0.4);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-70px); opacity: 5; }
+      to { transform: translateY(5); opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 10; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="top-header">
+      <img src="https://i.imgur.com/MlQZC98.png" alt="Aman Pathak DP">
+      <div>
+        <h1>Aman Pathak</h1>
+        <p>Web Developer | Programmer | DSA Enthusiast</p>
+      </div>
+    </div>
+    <div class="about">
+      <h2>- About me -</h2>
+      👋 I'm a passionate web developer currently pursuing B.Tech from Jaypee University of Engineering and Technology, Guna (MP).  
+      I love building responsive websites using HTML, CSS, JavaScript and exploring DSA problems on platforms like LeetCode.  
+      Also volunteering at Bitwise & always eager to learn more through tech workshops and projects!
+    </div>
+  </header>
+
+  <button onclick="toggleTheme()">🌗 Toggle Theme</button>
+
+  <section class="section">
+    <h2>College & Location</h2>
+    <div class="icon-text">
+      <img src="https://img.icons8.com/ios-filled/50/university.png" alt="University" />
+      <span>Jaypee University of Engineering and Technology, Guna</span>
+    </div>
+    <div class="icon-text">
+      <img src="https://img.icons8.com/ios-filled/50/marker.png" alt="Location" />
+      <span>Madhya Pradesh, India</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>C</li>
+      <li>C++</li>
+      <li>JavaScript</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Python</li>
+      <li>Data Structures & Algorithms (DSA)</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Weather App:</strong> Live weather data using open APIs.</li>
+      <li><strong>Image Search Engine:</strong> JavaScript-powered Unsplash image fetcher.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>LeetCode Stats</h2>
+    <ul>
+      <li>🧠 Solved: <strong>286</strong> / 3554</li>
+      <li>🔥 Top: <strong>11.87%</strong> globally</li>
+      <li>🏅 Latest Badge: <strong>100 Days Badge 2025</strong></li>
+      <li>📊 Submissions: <strong>420+ in last year</strong></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Volunteer & Extras</h2>
+    <ul>
+      <li>💼 Volunteer at <strong>Bitwise</strong></li>
+      <li>🎯 Attended multiple Tech Workshops</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: <a href="mailto:amanbhai2455@gmail.com">amanbhai2455@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/aman-coder59">github.com/aman-coder59</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/aman-pathak-393553322/">linkedin.com/in/aman-pathak</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Aman Pathak. All rights reserved.
+  </footer>
+
+  <!-- Confetti Script -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+
+    let isLight = true;
+    function toggleTheme() {
+      const root = document.documentElement;
+      const sections = document.querySelectorAll('.section');
+      if (isLight) {
+        document.body.style.background = getComputedStyle(root).getPropertyValue('--dark-body-bg');
+        document.body.style.color = getComputedStyle(root).getPropertyValue('--dark-text');
+        sections.forEach(sec => {
+          sec.style.background = getComputedStyle(root).getPropertyValue('--section-dark');
+        });
+      } else {
+        document.body.style.background = getComputedStyle(root).getPropertyValue('--light-body-bg');
+        document.body.style.color = getComputedStyle(root).getPropertyValue('--light-text');
+        sections.forEach(sec => {
+          sec.style.background = getComputedStyle(root).getPropertyValue('--section-light');
+        });
+      }
+      isLight = !isLight;
+    }
+
+    // Confetti on load
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        confetti({
+          particleCount: 250,
+          spread: 100,
+          origin: { y: 0.6 }
+        });
+      }, 300);
+    });
+  </script>
+
+</body>
+</html>
